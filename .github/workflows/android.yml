@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies, Build Web & Sync Capacitor
+      - name: Install dependencies & Build
         run: |
           npm install
           npm run build
@@ -27,11 +27,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build APK
+      - name: Build APK with Gradle
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
