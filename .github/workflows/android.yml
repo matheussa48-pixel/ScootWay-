@@ -15,9 +15,10 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies & Sync Capacitor
+      - name: Install dependencies, Build Web & Sync Capacitor
         run: |
           npm install
+          npm run build
           npx cap sync android
 
       - name: Set up JDK 17
