@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     namespace = "com.scootway.app"
-    compileSdk = rootProject.ext.compileSdkVersion
+    compileSdk = rootProject.ext.compileSdkVersion 35
     defaultConfig {
         applicationId "com.scootway.app"
         minSdkVersion rootProject.ext.minSdkVersion
