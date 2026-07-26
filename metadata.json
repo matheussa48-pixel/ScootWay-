@@ -1,0 +1,6 @@
+{
+  "name": "ScootWay",
+  "description": "Assistente de navegação inteligente, cálculo de altimetria e monitor de telemetria em tempo real para scooters elétricas de 1000W.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
